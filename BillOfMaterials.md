@@ -2,5 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|M3 Lock Nut|1|$0.1|www.example.com|
-|Total: |1|$0.1| |
+|New Item|1|$0.00||
+|Total: |1|$0.00| |

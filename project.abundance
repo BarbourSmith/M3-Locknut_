@@ -1,28 +1,32 @@
 {
   "atomType": "Molecule",
-  "name": "M3-Locknut_",
   "x": 0,
   "y": 0,
   "uniqueID": 1738781064115,
+  "name": "M3-Locknut_",
   "ioValues": [
     {
-      "name": "name1",
-      "ioValue": 10
+      "name": "Keep_Out_Length",
+      "ioValue": 10,
+      "currentEquation": "10"
     }
   ],
   "topLevel": true,
   "allAtoms": [
     {
       "atomType": "Output",
-      "name": "Output",
       "x": 0.98,
       "y": 0.5,
       "uniqueID": 1738781072694,
-      "ioValues": []
+      "ioValues": [
+        {
+          "name": "number or geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ]
     },
     {
       "atomType": "RegularPolygon",
-      "name": "RegularPolygon",
       "x": 0.2294973544973545,
       "y": 0.3008356545961003,
       "uniqueID": 1738781075660,
@@ -39,11 +43,14 @@
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
       "x": 0.43452380952380953,
       "y": 0.2646239554317549,
       "uniqueID": 1738781176776,
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
         {
           "name": "height",
           "ioValue": -4
@@ -52,11 +59,14 @@
     },
     {
       "atomType": "Extrude",
-      "name": "Extrude",
       "x": 0.35449735449735453,
       "y": 0.7688022284122563,
       "uniqueID": 1738781219058,
       "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
         {
           "name": "height",
           "ioValue": 10
@@ -65,95 +75,48 @@
     },
     {
       "atomType": "Color",
-      "name": "Color",
       "x": 0.5568783068783069,
       "y": 0.3259052924791086,
       "uniqueID": 1738781229256,
-      "ioValues": [],
-      "selectedColorIndex": 19
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Grey"
     },
     {
       "atomType": "Assembly",
-      "name": "Assembly",
       "x": 0.744047619047619,
       "y": 0.7214484679665739,
       "uniqueID": 1738781243399,
       "ioValues": [
         {
           "name": "Shape 1",
-          "ioValue": {
-            "geometry": "extrude-8d015d71e84542a0fc2895e33a415567bab94c9fe59c44daeb8b162960cb57de",
-            "dimension": "3D",
-            "tags": [],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#BABABA",
-            "bom": [
-              {
-                "BOMitemName": "M3 Lock Nut",
-                "numberNeeded": 1,
-                "costUSD": 0.1,
-                "source": "www.example.com"
-              }
-            ]
-          }
+          "ioValue": null
         },
         {
           "name": "Shape 2",
-          "ioValue": {
-            "geometry": "extrude-cf3cb1abbadbfb5a057080e408cf9b811b8a998c821408c7a7efa9daee511861",
-            "dimension": "3D",
-            "tags": [
-              "keepout"
-            ],
-            "plane": {
-              "origin": [
-                0,
-                0,
-                0
-              ],
-              "xDir": [
-                1,
-                0,
-                0
-              ],
-              "normal": [
-                0,
-                0,
-                1
-              ]
-            },
-            "color": "#D9544D",
-            "bom": []
-          }
+          "ioValue": null
         }
       ]
     },
     {
       "atomType": "Add-BOM-Tag",
-      "name": "Add BOM Tag",
       "x": 0.6223544973544973,
       "y": 0.5682451253481894,
       "uniqueID": 1738781247332,
+      "name": "Add BOM Tag",
       "ioValues": [
         {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        },
+        {
           "name": "Item Name",
-          "ioValue": "New Item"
+          "ioValue": "New Item",
+          "currentEquation": "New Item"
         },
         {
           "name": "Number Needed",
@@ -169,82 +132,76 @@
         }
       ],
       "BOMitem": {
-        "BOMitemName": "M3 Lock Nut",
+        "BOMitemName": "New Item",
         "numberNeeded": 1,
-        "costUSD": 0.1,
-        "source": "www.example.com"
+        "costUSD": 0,
+        "source": ""
       }
     },
     {
       "atomType": "Input",
-      "name": "name1",
-      "x": 0.029699999999999997,
-      "y": 0.5988857938718662,
+      "x": 0.025384615384615384,
+      "y": 0.4083333333333333,
       "uniqueID": 1738781271750,
-      "ioValues": [],
+      "name": "Keep_Out_Length",
       "type": "number"
     },
     {
       "atomType": "Color",
-      "name": "Color",
       "x": 0.46759259259259256,
       "y": 0.7019498607242339,
       "uniqueID": 1738781302462,
-      "ioValues": [],
-      "selectedColorIndex": 23
+      "ioValues": [
+        {
+          "name": "geometry",
+          "ioValue": "__GEOMETRY_INPUT__"
+        }
+      ],
+      "selectedColor": "Keep Out"
     }
   ],
   "allConnectors": [
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": 1738781075660,
       "ap2ID": 1738781176776
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": 1738781075660,
       "ap2ID": 1738781219058
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": 1738781176776,
       "ap2ID": 1738781229256
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "geometry",
       "ap1ID": 1738781219058,
       "ap2ID": 1738781302462
     },
     {
-      "ap1Name": "color",
       "ap2Name": "geometry",
       "ap1ID": 1738781229256,
       "ap2ID": 1738781247332
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "number or geometry",
       "ap1ID": 1738781243399,
       "ap2ID": 1738781072694
     },
     {
-      "ap1Name": "geometry",
       "ap2Name": "Shape 1",
       "ap1ID": 1738781247332,
       "ap2ID": 1738781243399
     },
     {
-      "ap1Name": "number or geometry",
       "ap2Name": "height",
       "ap1ID": 1738781271750,
       "ap2ID": 1738781219058
     },
     {
-      "ap1Name": "color",
       "ap2Name": "Shape 2",
       "ap1ID": 1738781302462,
       "ap2ID": 1738781243399
@@ -252,13 +209,5 @@
   ],
   "unitsKey": "MM",
   "fileTypeVersion": 1,
-  "compiledBom": [
-    {
-      "BOMitemName": "M3 Lock Nut",
-      "numberNeeded": 1,
-      "costUSD": 0.1,
-      "source": "www.example.com"
-    }
-  ],
   "filetypeVersion": 1
 }
