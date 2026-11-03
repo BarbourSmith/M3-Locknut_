@@ -4,7 +4,24 @@
 
 ![](/project.svg)
 
+## Inputs
+
+- **Keep_Out_Length** (number)
 
 
- 
+
+
+ An M3 nylon-insert locknut to place in Abundance designs, with the clearance its pocket needs.
+
+**How it sits:** the nut body is a hexagonal prism from Z = -4 to Z = 0, centered on the Z axis. It is 6.5 mm across corners (along Y) and about 5.6 mm across flats (along X). The model is solid, with no threaded hole; the bolt's shank cuts the hole through the part.
+
+**Inputs**
+
+- **Keep_Out_Length** (mm, default 10): how far the Keep Out reaches up from the top of the nut. The Keep Out is the same 6.5 mm hexagon, running from Z = 0 up to Z = Keep_Out_Length.
+
+**What the Keep Out is for:** put the nut in an Assembly with makeDisjoint on, connected after the part it sits in. The nut body cuts a hexagonal pocket (a nut trap), and the Keep Out extends that pocket up from the top of the nut so the nut can be dropped in from the surface. Set Keep_Out_Length so the Keep Out reaches past that surface. Keep Out geometry is left out of fusions, cut layouts, and gcode, and Extract Tag's "Not Keep Out" option removes it. With makeDisjoint off, the nut shows without cutting anything.
+
+**Bill of materials:** the nut body carries its own Add-BOM-Tag ("M3 nylon-insert locknut, stainless"), so don't add another. The Keep Out is not tagged. Each placed copy counts once.
+
+
 

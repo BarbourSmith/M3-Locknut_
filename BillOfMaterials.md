@@ -2,5 +2,5 @@
 # Bill Of Materials 
  |Part|Number Needed|Price|Source| 
  |----|----------|-----|-----|
-|New Item|1|$0.00||
+|M3 nylon-insert locknut, stainless|1|$0.00||
 |Total: |1|$0.00| |
